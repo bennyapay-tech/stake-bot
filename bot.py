@@ -1,25 +1,6 @@
-from flask import Flask
-import threading
 import telebot
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 import random
-
-# --- RENDER WEB SERVİSİ İÇİN MİNİ SUNUCU ---
-app = Flask('')
-
-@app.route('/')
-def home():
-    return "Bot is alive and running!"
-
-def run():
-    app.run(host='0.0.0.0', port=8080)
-
-def keep_alive():
-    t = threading.Thread(target=run)
-    t.start()
-
-keep_alive()
-# -------------------------------------------
 
 TOKEN = "8829651688:AAFF7q9EuRLWPxEiOCxSRtv9W7vAy0GGTB0"
 bot = telebot.TeleBot(TOKEN)
