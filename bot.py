@@ -69,7 +69,7 @@ def akilli_cevap(message):
 
 print("Gelişmiş Stake Bot aktif ve çalışıyor...")
 bot.infinity_polling()
-  import telebot
+import telebot
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 import random
 
